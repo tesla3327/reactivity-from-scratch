@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Day 7: Simple Reactive Store Demo</title>
+    <link rel="stylesheet" href="../global/theme.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Day 7: Simple Reactive Store Demo</h1>
+      <div class="demo-section">
+        <h2>Counter</h2>
+        <p>Count: <span id="count"></span></p>
+        <p>Double Count: <span id="doubleCount"></span></p>
+        <button id="increment">Increment</button>
+      </div>
+
+      <div class="demo-section">
+        <h2>Todo List</h2>
+        <div class="input-group">
+          <form id="todoForm">
+            <input
+              type="text"
+              id="todoInput"
+              placeholder="Enter a new todo"
+            />
+            <button type="submit">Add Todo</button>
+          </form>
+        </div>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

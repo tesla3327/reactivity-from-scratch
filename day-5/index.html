@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Day 5: Ref Manipulation Demo</title>
+    <link rel="stylesheet" href="../global/theme.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Day 5: Ref Manipulation Demo</h1>
+      <div class="info">
+        <p>Full Name: <span id="full-name"></span></p>
+        <p>Age: <span id="age"></span></p>
+        <p>
+          Age Description:
+          <span id="age-description"></span>
+        </p>
+      </div>
+      <button id="change-first-name">
+        Change First Name
+      </button>
+      <button id="change-last-name">
+        Change Last Name
+      </button>
+      <button id="increment-age">Increment Age</button>
+      <button id="decrement-age">Decrement Age</button>
+      <div class="ref-demo">
+        <h2>isRef and unref Demo</h2>
+        <p>Is age a ref? <span id="is-age-ref"></span></p>
+        <p>Unref age value: <span id="unref-age"></span></p>
+        <p>
+          Is fullName a ref?
+          <span id="is-fullname-ref"></span>
+        </p>
+        <p>
+          Unref fullName value:
+          <span id="unref-fullname"></span>
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

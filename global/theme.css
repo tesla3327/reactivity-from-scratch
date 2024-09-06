@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #000;
+  color: #0f0;
+}
+h1,
+h2 {
+  color: #0f0;
+  font-weight: 400;
+  text-shadow: 0 0 10px #0f0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #111; /* Match the theme */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Match the theme */
+}
+button {
+  background-color: #0f0;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: 'Source Code Pro', monospace; /* Updated font */
+}
+button:hover {
+  background-color: #0c0;
+}
+form {
+  width: 100%;
+  display: flex;
+}
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #0f0;
+  border-radius: 4px;
+  margin-right: 10px;
+  background: #222;
+  color: #0f0;
+  box-shadow: 0 0 5px #0f0;
+  font-family: 'Source Code Pro', monospace; /* Updated font */
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  background: #222;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+li:hover {
+  background: #333;
+}
+.demo-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #111;
+}
+.demo-section h2 {
+  margin-top: 0;
+}
+#person-info,
+#output,
+.info {
+  background-color: #222; /* Match the theme */
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  input[type='text'] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .demo-section {
+    padding: 5px;
+  }
+
+  #person-info,
+  #output,
+  .info {
+    padding: 0.5rem;
+  }
+}
